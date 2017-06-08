@@ -244,3 +244,11 @@ void Route::addPoint( Point* point)
 {
 	m_point_list.push_back(point);
 }
+
+double Route::probabConflictViaDepartTime(Point *p1, Point *p2, Route *r2) {
+	return 0;
+}
+
+double Route::delaiSansConflitViaDepartTime(Point *p1, Point *p2, Route *r2, int *ind) {
+	return 0;
+}

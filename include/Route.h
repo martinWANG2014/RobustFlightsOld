@@ -38,7 +38,11 @@ public:
 
     double probabConflit(Point *p1, Point *p2, Route *r2);
 
+    double probabConflictViaDepartTime(Point *p1, Point *p2, Route *r2);
+
     double delaiSansConflit(Point *p1, Point *p2, Route *r2, int *ind);
+
+    double delaiSansConflitViaDepartTime(Point *p1, Point *p2, Route *r2, int *ind);
 
     Point *getPoint(unsigned int index);
 
