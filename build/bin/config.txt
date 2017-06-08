@@ -1,0 +1,5 @@
+// Config file
+96		// number of periods
+airport.txt // airport list
+beacon.txt 	// navaid or beacon list
+flight.txt 	// dailly flight list
