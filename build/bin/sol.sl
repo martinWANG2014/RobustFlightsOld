@@ -4,7 +4,7 @@
    problemName="IloCplex"
    solutionName="incumbent"
    solutionIndex="-1"
-   objectiveValue="318"
+   objectiveValue="312"
    solutionTypeValue="3"
    solutionTypeString="primal"
    solutionStatusValue="101"
@@ -21,11 +21,38 @@
    maxIntInfeas="0"
    maxPrimalInfeas="0"
    maxX="1"
-   maxSlack="4.0266666666666673"/>
+   maxSlack="14.464058503003745"/>
  <linearConstraints>
   <constraint index="0" slack="4.0266666666666673"/>
   <constraint index="1" slack="3.0166666666666657"/>
   <constraint index="2" slack="4.0166666666666666"/>
+  <constraint index="3" slack="4.0166666666666666"/>
+  <constraint index="4" slack="3.0350000000000001"/>
+  <constraint index="5" slack="5.0133333333333336"/>
+  <constraint index="6" slack="5.0133333333333336"/>
+  <constraint index="7" slack="4.8334804505326598"/>
+  <constraint index="8" slack="2.9555868132253078"/>
+  <constraint index="9" slack="4.9979934544646323"/>
+  <constraint index="10" slack="7.0066666666666677"/>
+  <constraint index="11" slack="4.0066666666666677"/>
+  <constraint index="12" slack="5.0066666666666677"/>
+  <constraint index="13" slack="3.0216666666666665"/>
+  <constraint index="14" slack="4.0166666666666666"/>
+  <constraint index="15" slack="4.0449999999999999"/>
+  <constraint index="16" slack="2.0466666666666669"/>
+  <constraint index="17" slack="5.0466666666666669"/>
+  <constraint index="18" slack="4.0466666666666669"/>
+  <constraint index="19" slack="5.0449999999999999"/>
+  <constraint index="20" slack="5.0266666666666673"/>
+  <constraint index="21" slack="4.0350000000000001"/>
+  <constraint index="22" slack="3.0350000000000001"/>
+  <constraint index="23" slack="4.0516666666666667"/>
+  <constraint index="24" slack="4.0516666666666659"/>
+  <constraint index="25" slack="2.0516666666666659"/>
+  <constraint index="26" slack="4.0516666666666659"/>
+  <constraint index="27" slack="5.0216666666666665"/>
+  <constraint index="28" slack="4.0216666666666665"/>
+  <constraint index="29" slack="14.464058503003745"/>
  </linearConstraints>
  <variables>
   <variable name="x(0)" index="0" value="1"/>
@@ -70,7 +97,7 @@
   <variable name="x(39)" index="39" value="1"/>
   <variable name="x(40)" index="40" value="1"/>
   <variable name="x(41)" index="41" value="1"/>
-  <variable name="x(42)" index="42" value="1"/>
+  <variable name="x(42)" index="42" value="0"/>
   <variable name="x(43)" index="43" value="1"/>
   <variable name="x(44)" index="44" value="1"/>
   <variable name="x(45)" index="45" value="1"/>
@@ -121,7 +148,7 @@
   <variable name="x(90)" index="90" value="1"/>
   <variable name="x(91)" index="91" value="1"/>
   <variable name="x(92)" index="92" value="1"/>
-  <variable name="x(93)" index="93" value="1"/>
+  <variable name="x(93)" index="93" value="0"/>
   <variable name="x(94)" index="94" value="1"/>
   <variable name="x(95)" index="95" value="1"/>
   <variable name="x(96)" index="96" value="1"/>
