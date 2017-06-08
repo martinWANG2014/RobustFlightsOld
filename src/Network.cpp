@@ -1,5 +1,5 @@
-#include "Network.h"
-#include "Route.h"
+#include "../include/Network.h"
+
 Network::Network(void)
 {
 }

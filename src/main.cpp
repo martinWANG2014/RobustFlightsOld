@@ -1,10 +1,7 @@
-#include "define.h"
-#include "Network.h"
-#include "Route.h"
-#include "Input.h"
-#include "Point.h"
-#include "Flight.h"
-#include "ProcessClock.h"
+#include "../include/define.h"
+#include "../include/Network.h"
+#include "../include/Input.h"
+#include "../include/ProcessClock.h"
 using namespace std;
 typedef std::map<Level, bool> LevelExamine;
 ILOSTLBEGIN

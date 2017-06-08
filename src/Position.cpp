@@ -1,5 +1,5 @@
-#include "Position.h"
-#include <math.h>
+#include "../include/Position.h"
+
 //constructeur
 Position::Position(): m_latitude(0.0), m_longitude(0.0)
 {

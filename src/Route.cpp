@@ -1,7 +1,7 @@
-#include "Route.h"
-#include "Airport.h"
-#include "Node.h"
-#include "Flight.h"
+#include "../include/Route.h"
+#include "../include/Airport.h"
+#include "../include/Node.h"
+#include "../include/Flight.h"
 Route::Route() : m_code(""), m_flight(NULL), m_level(0){}
 
 Route::~Route(void)

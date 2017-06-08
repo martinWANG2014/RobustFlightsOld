@@ -1,6 +1,6 @@
-#include "define.h"
-#include "Point.h"
-#include "Node.h"
+#include "../include/define.h"
+#include "../include/Point.h"
+#include "../include/Node.h"
 Point::Point(void)
 : m_time(0)
 , m_node(NULL) 

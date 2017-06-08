@@ -1,4 +1,4 @@
-#include "Flight.h"
+#include "../include/Flight.h"
 
 Flight::Flight() : 
 m_ICAOcode(""),

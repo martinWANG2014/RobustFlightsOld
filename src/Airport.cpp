@@ -1,4 +1,4 @@
-#include "Airport.h"
+#include "../include/Airport.h"
 
 Airport::Airport(void):
 m_ICAOCode(""), m_name (""), m_position(Position(0.0,0.0)) 

@@ -1,4 +1,4 @@
-#include "ProcessClock.h"
+#include "../include/ProcessClock.h"
 
 #ifdef WIN32
 
@@ -28,8 +28,6 @@ void ProcessClock::end() {
 #else
 
 #include <unistd.h>
-#include <time.h>
-#include <iostream>
 
 void ProcessClock::start() {
 	startClock = times(&startTime);

@@ -1,4 +1,4 @@
-#include "Node.h"
+#include "../include/Node.h"
 
 Node::Node(void):
 m_ICAOCode(""), m_name (""), m_position(Position(0.0,0.0)) 

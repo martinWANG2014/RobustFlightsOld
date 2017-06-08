@@ -1,4 +1,4 @@
-#include "Input.h"
+#include "../include/Input.h"
 #include <strstream>
 Input::Input(Network* pNetwork): m_network( pNetwork)
 {

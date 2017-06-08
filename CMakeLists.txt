@@ -36,7 +36,7 @@ if(CMAKE_COMPILER_IS_GNUCXX)
 endif()
 
 ######## find all the source files.
-file(GLOB HEADER_FILES src/*h)
+file(GLOB HEADER_FILES include/*.h)
 file(GLOB SOURCE_FILES src/*.cpp)
 
 ######## Set executable file name, and add the source files for it.

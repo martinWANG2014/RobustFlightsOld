@@ -4,7 +4,7 @@
    problemName="IloCplex"
    solutionName="incumbent"
    solutionIndex="-1"
-   objectiveValue="309"
+   objectiveValue="240"
    solutionTypeValue="3"
    solutionTypeString="primal"
    solutionStatusValue="101"
@@ -21,90 +21,39 @@
    maxIntInfeas="0"
    maxPrimalInfeas="0"
    maxX="1"
-   maxSlack="14.464058503003745"/>
+   maxSlack="6.0350000000000001"/>
  <linearConstraints>
-  <constraint index="0" slack="4.0266666666666673"/>
-  <constraint index="1" slack="3.0166666666666657"/>
-  <constraint index="2" slack="4.0166666666666666"/>
-  <constraint index="3" slack="4.0166666666666666"/>
-  <constraint index="4" slack="3.0350000000000001"/>
-  <constraint index="5" slack="5.0133333333333336"/>
-  <constraint index="6" slack="5.0133333333333336"/>
-  <constraint index="7" slack="4.8334804505326598"/>
-  <constraint index="8" slack="2.9555868132253078"/>
-  <constraint index="9" slack="4.9979934544646323"/>
-  <constraint index="10" slack="7.0066666666666677"/>
-  <constraint index="11" slack="4.0066666666666677"/>
-  <constraint index="12" slack="5.0066666666666677"/>
-  <constraint index="13" slack="3.0216666666666665"/>
-  <constraint index="14" slack="4.0166666666666666"/>
-  <constraint index="15" slack="4.0449999999999999"/>
-  <constraint index="16" slack="2.0466666666666669"/>
-  <constraint index="17" slack="6.0466666666666669"/>
-  <constraint index="18" slack="4.0466666666666669"/>
-  <constraint index="19" slack="5.0449999999999999"/>
-  <constraint index="20" slack="5.0266666666666673"/>
-  <constraint index="21" slack="4.0350000000000001"/>
-  <constraint index="22" slack="3.0350000000000001"/>
-  <constraint index="23" slack="4.0516666666666667"/>
-  <constraint index="24" slack="4.0516666666666659"/>
-  <constraint index="25" slack="2.0516666666666659"/>
-  <constraint index="26" slack="4.0516666666666659"/>
-  <constraint index="27" slack="5.0216666666666665"/>
-  <constraint index="28" slack="4.0216666666666665"/>
-  <constraint index="29" slack="14.464058503003745"/>
-  <constraint index="30" slack="4.0166666666666666"/>
-  <constraint index="31" slack="5.0449999999999999"/>
-  <constraint index="32" slack="14.464058503003745"/>
-  <constraint index="33" slack="5.0166666666666666"/>
-  <constraint index="34" slack="4.0166666666666657"/>
-  <constraint index="35" slack="13.464058503003745"/>
-  <constraint index="36" slack="5.0516666666666667"/>
-  <constraint index="37" slack="4.0516666666666667"/>
-  <constraint index="38" slack="2.1588917977483515"/>
-  <constraint index="39" slack="5.0449999999999999"/>
-  <constraint index="40" slack="4.0083333333333329"/>
-  <constraint index="41" slack="5.0149999999999997"/>
-  <constraint index="42" slack="4.0150000000000006"/>
-  <constraint index="43" slack="5.0533333333333337"/>
-  <constraint index="44" slack="5.0533333333333337"/>
-  <constraint index="45" slack="5.0533333333333337"/>
-  <constraint index="46" slack="3.0083333333333329"/>
-  <constraint index="47" slack="5.0083333333333337"/>
-  <constraint index="48" slack="4.0083333333333329"/>
-  <constraint index="49" slack="5.0083333333333329"/>
-  <constraint index="50" slack="5.0083333333333329"/>
-  <constraint index="51" slack="5.0083333333333337"/>
-  <constraint index="52" slack="5.0083333333333337"/>
-  <constraint index="53" slack="5.0083333333333337"/>
-  <constraint index="54" slack="5.0083333333333337"/>
-  <constraint index="55" slack="5.0083333333333337"/>
-  <constraint index="56" slack="5.0083333333333337"/>
-  <constraint index="57" slack="5.0083333333333337"/>
-  <constraint index="58" slack="4.0083333333333329"/>
-  <constraint index="59" slack="4.0083333333333337"/>
-  <constraint index="60" slack="5.0083333333333337"/>
-  <constraint index="61" slack="3.3480389376494557"/>
-  <constraint index="62" slack="4.0083333333333329"/>
-  <constraint index="63" slack="4.0083333333333329"/>
-  <constraint index="64" slack="4.0083333333333329"/>
-  <constraint index="65" slack="3.0083333333333329"/>
-  <constraint index="66" slack="5.0083333333333337"/>
-  <constraint index="67" slack="5.0083333333333337"/>
-  <constraint index="68" slack="5.0083333333333337"/>
-  <constraint index="69" slack="4.0083333333333337"/>
-  <constraint index="70" slack="5.0083333333333337"/>
-  <constraint index="71" slack="5.0083333333333329"/>
-  <constraint index="72" slack="5.0083333333333329"/>
-  <constraint index="73" slack="4.0083333333333329"/>
-  <constraint index="74" slack="4.0083333333333329"/>
-  <constraint index="75" slack="3.0416666666666679"/>
-  <constraint index="76" slack="0.39935324795741689"/>
+  <constraint index="0" slack="5.0883333333333329"/>
+  <constraint index="1" slack="6.0350000000000001"/>
+  <constraint index="2" slack="5.0083333333333337"/>
+  <constraint index="3" slack="4.0350000000000001"/>
+  <constraint index="4" slack="5.0350000000000001"/>
+  <constraint index="5" slack="3.6768791426050864"/>
+  <constraint index="6" slack="5.0116666666666667"/>
+  <constraint index="7" slack="4.0116666666666667"/>
+  <constraint index="8" slack="3"/>
+  <constraint index="9" slack="5"/>
+  <constraint index="10" slack="5"/>
+  <constraint index="11" slack="4"/>
+  <constraint index="12" slack="4"/>
+  <constraint index="13" slack="4"/>
+  <constraint index="14" slack="5.7452343303608195"/>
+  <constraint index="15" slack="4"/>
+  <constraint index="16" slack="5"/>
+  <constraint index="17" slack="5"/>
+  <constraint index="18" slack="5.0183333333333335"/>
+  <constraint index="19" slack="5.0700000000000003"/>
+  <constraint index="20" slack="5.0700000000000003"/>
+  <constraint index="21" slack="4.0666666666666664"/>
+  <constraint index="22" slack="4"/>
+  <constraint index="23" slack="5.0350000000000001"/>
+  <constraint index="24" slack="5.0350000000000001"/>
+  <constraint index="25" slack="5.0350000000000001"/>
  </linearConstraints>
  <variables>
   <variable name="x(0)" index="0" value="1"/>
   <variable name="x(1)" index="1" value="1"/>
-  <variable name="x(2)" index="2" value="1"/>
+  <variable name="x(2)" index="2" value="0"/>
   <variable name="x(3)" index="3" value="1"/>
   <variable name="x(4)" index="4" value="1"/>
   <variable name="x(5)" index="5" value="1"/>
@@ -133,7 +82,7 @@
   <variable name="x(28)" index="28" value="1"/>
   <variable name="x(29)" index="29" value="1"/>
   <variable name="x(30)" index="30" value="1"/>
-  <variable name="x(31)" index="31" value="1"/>
+  <variable name="x(31)" index="31" value="0"/>
   <variable name="x(32)" index="32" value="1"/>
   <variable name="x(33)" index="33" value="1"/>
   <variable name="x(34)" index="34" value="1"/>
@@ -144,7 +93,7 @@
   <variable name="x(39)" index="39" value="1"/>
   <variable name="x(40)" index="40" value="1"/>
   <variable name="x(41)" index="41" value="1"/>
-  <variable name="x(42)" index="42" value="0"/>
+  <variable name="x(42)" index="42" value="1"/>
   <variable name="x(43)" index="43" value="1"/>
   <variable name="x(44)" index="44" value="1"/>
   <variable name="x(45)" index="45" value="1"/>
@@ -154,9 +103,9 @@
   <variable name="x(49)" index="49" value="1"/>
   <variable name="x(50)" index="50" value="1"/>
   <variable name="x(51)" index="51" value="1"/>
-  <variable name="x(52)" index="52" value="1"/>
+  <variable name="x(52)" index="52" value="0"/>
   <variable name="x(53)" index="53" value="1"/>
-  <variable name="x(54)" index="54" value="0"/>
+  <variable name="x(54)" index="54" value="1"/>
   <variable name="x(55)" index="55" value="1"/>
   <variable name="x(56)" index="56" value="1"/>
   <variable name="x(57)" index="57" value="1"/>
@@ -169,7 +118,7 @@
   <variable name="x(64)" index="64" value="1"/>
   <variable name="x(65)" index="65" value="1"/>
   <variable name="x(66)" index="66" value="1"/>
-  <variable name="x(67)" index="67" value="0"/>
+  <variable name="x(67)" index="67" value="1"/>
   <variable name="x(68)" index="68" value="1"/>
   <variable name="x(69)" index="69" value="1"/>
   <variable name="x(70)" index="70" value="1"/>
@@ -185,31 +134,6 @@
   <variable name="x(80)" index="80" value="1"/>
   <variable name="x(81)" index="81" value="1"/>
   <variable name="x(82)" index="82" value="1"/>
-  <variable name="x(83)" index="83" value="1"/>
-  <variable name="x(84)" index="84" value="1"/>
-  <variable name="x(85)" index="85" value="1"/>
-  <variable name="x(86)" index="86" value="1"/>
-  <variable name="x(87)" index="87" value="1"/>
-  <variable name="x(88)" index="88" value="1"/>
-  <variable name="x(89)" index="89" value="1"/>
-  <variable name="x(90)" index="90" value="1"/>
-  <variable name="x(91)" index="91" value="1"/>
-  <variable name="x(92)" index="92" value="1"/>
-  <variable name="x(93)" index="93" value="0"/>
-  <variable name="x(94)" index="94" value="1"/>
-  <variable name="x(95)" index="95" value="1"/>
-  <variable name="x(96)" index="96" value="1"/>
-  <variable name="x(97)" index="97" value="1"/>
-  <variable name="x(98)" index="98" value="1"/>
-  <variable name="x(99)" index="99" value="1"/>
-  <variable name="x(100)" index="100" value="1"/>
-  <variable name="x(101)" index="101" value="1"/>
-  <variable name="x(102)" index="102" value="1"/>
-  <variable name="x(103)" index="103" value="1"/>
-  <variable name="x(104)" index="104" value="1"/>
-  <variable name="x(105)" index="105" value="1"/>
-  <variable name="x(106)" index="106" value="0"/>
-  <variable name="x(107)" index="107" value="0"/>
-  <variable name="x(108)" index="108" value="1"/>
+  <variable name="x(83)" index="83" value="0"/>
  </variables>
 </CPLEXSolution>
