@@ -8,7 +8,17 @@
 #include "Airport.h"
 #include "Flight.h"
 #include "Network.h"
+#include <algorithm>
 
+//=======================================================================================
+//add by chenghao wang
+static IntVector LevelIFRA{10, 30, 50, 70, 90, 110, 130, 150, 170, 190, 210, 230, 250, 270, 290, 330, 370, 410, 450,
+                           490};
+static IntVector LevelIFRB{20, 40, 60, 80, 100, 120, 140, 160, 180, 200, 220, 240, 260, 280, 310, 350, 390, 430, 470,
+                           510};
+static IntVector LevelVFRA{35, 55, 75, 95, 115, 135, 155, 175, 195};
+static IntVector LevelVFRB{45, 65, 85, 105, 125, 145, 165, 185};
+//=======================================================================================
 /**
 * This class perform the input tasks for the network
 * We need 4 files
@@ -65,6 +75,8 @@ public:
     int maxLevel(int *NombreVols, IntVector temp_list, LevelSet level);
 
     bool appartient0(int i, IntVector Contrainte_list);
+
+    IntVector findFeasibleLevels(int iDefaultLevel);
 };
 
 #endif

@@ -351,20 +351,33 @@ bool Input::readFlightFile(int period_length)
 			int index=0;
 			
 			//extern int clevel;
-
-			for ( int i= 0,l = -1 ; l <= 1 ; l++, i++)
-			{	
-				// we consider levels �0
-				pr[i] = pf->addNewRoute(rcode, flightLevel + 40*l);		
-						level.insert(flightLevel+ 40*l);
+            //#################################################################
+            //added by chenghao wang
+            IntVector feasibleLevelList = findFeasibleLevels(flightLevel);
+            for (int i = 0; i < feasibleLevelList.size(); i++) {
+                pr[i] = pf->addNewRoute(rcode, feasibleLevelList[i]);
+                level.insert(feasibleLevelList[i]);
 				// set active route is scheduled route
-				if (l==0){
+                if (i == 0) {
 					pf->setActiveRoute(pr[i]) ;
 				}
-
 				// aad route to list of route in nework
 				m_network->addRoute(pr[i]);
-			}
+            }
+            //#################################################################
+//			for ( int i= 0,l = -1 ; l <= 1 ; l++, i++)
+//			{
+//				// we consider levels �0
+//				pr[i] = pf->addNewRoute(rcode, flightLevel + 40*l);
+//						level.insert(flightLevel+ 40*l);
+//				// set active route is scheduled route
+//				if (l==0){
+//					pf->setActiveRoute(pr[i]) ;
+//				}
+//
+//				// aad route to list of route in nework
+//				m_network->addRoute(pr[i]);
+//			}
 			do
 			{
 				// add point to Route
@@ -445,4 +458,85 @@ bool Input::readFlightFile(int period_length)
 	std::cout << "Read flight file sucessfully.\n" ;
 	std::cout << "Number of flights = " << num_flights << "\n";		
 	return true;	
+}
+
+IntVector Input::findFeasibleLevels(int iDefaultLevel) {
+    IntVector feasibleList;
+    feasibleList.push_back(iDefaultLevel);
+    if (iDefaultLevel < 290) {
+        auto position = LevelIFRA.end();
+        switch (iDefaultLevel % 4) {
+            // in IFR B group
+            case 0:
+                position = std::find(LevelIFRB.begin(), LevelIFRB.end(), iDefaultLevel);
+                if (position == LevelIFRB.begin()) {
+                    feasibleList.push_back(*(position + 1));
+                    feasibleList.push_back(*(position + 2));
+                } else {
+                    feasibleList.push_back(*(position + 1));
+                    feasibleList.push_back(*(position - 1));
+                }
+                break;
+                // in VFR B group
+            case 1:
+                position = std::find(LevelVFRB.begin(), LevelVFRB.end(), iDefaultLevel);
+                if (position == LevelVFRB.begin()) {
+                    feasibleList.push_back(*(position + 1));
+                    feasibleList.push_back(*(position + 2));
+                } else if (position == LevelVFRB.end() - 1) {
+                    feasibleList.push_back(*(position - 1));
+                    feasibleList.push_back(*(position - 2));
+                } else {
+                    feasibleList.push_back(*(position + 1));
+                    feasibleList.push_back(*(position - 1));
+                }
+                break;
+                // in IFR A group
+            case 2:
+                position = std::find(LevelIFRA.begin(), LevelIFRA.end(), iDefaultLevel);
+                if (position == LevelIFRA.begin()) {
+                    feasibleList.push_back(*(position + 1));
+                    feasibleList.push_back(*(position + 2));
+                } else {
+                    feasibleList.push_back(*(position + 1));
+                    feasibleList.push_back(*(position - 1));
+                }
+                break;
+                // in VFR A group
+            case 3:
+                position = std::find(LevelVFRA.begin(), LevelVFRA.end(), iDefaultLevel);
+                if (position == LevelVFRA.begin()) {
+                    feasibleList.push_back(*(position + 1));
+                    feasibleList.push_back(*(position + 2));
+                } else if (position == LevelVFRA.end() - 1) {
+                    feasibleList.push_back(*(position - 1));
+                    feasibleList.push_back(*(position - 2));
+                } else {
+                    feasibleList.push_back(*(position + 1));
+                    feasibleList.push_back(*(position - 1));
+                }
+                break;
+        }
+    } else if (iDefaultLevel % 40 == 10) {
+        // in IFR A group
+        auto position = std::find(LevelIFRA.begin(), LevelIFRA.end(), iDefaultLevel);
+        if (position == LevelIFRA.end() - 1) {
+            feasibleList.push_back(*(position - 1));
+            feasibleList.push_back(*(position - 2));
+        } else {
+            feasibleList.push_back(*(position + 1));
+            feasibleList.push_back(*(position - 1));
+        }
+    } else {
+        // in IFR B group
+        auto position = std::find(LevelIFRB.begin(), LevelIFRB.end(), iDefaultLevel);
+        if (position == LevelIFRB.end() - 1) {
+            feasibleList.push_back(*(position - 1));
+            feasibleList.push_back(*(position - 2));
+        } else {
+            feasibleList.push_back(*(position + 1));
+            feasibleList.push_back(*(position - 1));
+        }
+    }
+    return feasibleList;
 }

@@ -144,3 +144,4 @@ Point* Network::addNewPoint(Node* node, Time time,int period_len,int pos)
 void Network::setLevelList(IntVector& level_list){
 	m_level_list=level_list;
 }
+
