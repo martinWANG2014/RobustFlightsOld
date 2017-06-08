@@ -4,7 +4,7 @@
    problemName="IloCplex"
    solutionName="incumbent"
    solutionIndex="-1"
-   objectiveValue="312"
+   objectiveValue="309"
    solutionTypeValue="3"
    solutionTypeString="primal"
    solutionStatusValue="101"
@@ -40,7 +40,7 @@
   <constraint index="14" slack="4.0166666666666666"/>
   <constraint index="15" slack="4.0449999999999999"/>
   <constraint index="16" slack="2.0466666666666669"/>
-  <constraint index="17" slack="5.0466666666666669"/>
+  <constraint index="17" slack="6.0466666666666669"/>
   <constraint index="18" slack="4.0466666666666669"/>
   <constraint index="19" slack="5.0449999999999999"/>
   <constraint index="20" slack="5.0266666666666673"/>
@@ -53,6 +53,53 @@
   <constraint index="27" slack="5.0216666666666665"/>
   <constraint index="28" slack="4.0216666666666665"/>
   <constraint index="29" slack="14.464058503003745"/>
+  <constraint index="30" slack="4.0166666666666666"/>
+  <constraint index="31" slack="5.0449999999999999"/>
+  <constraint index="32" slack="14.464058503003745"/>
+  <constraint index="33" slack="5.0166666666666666"/>
+  <constraint index="34" slack="4.0166666666666657"/>
+  <constraint index="35" slack="13.464058503003745"/>
+  <constraint index="36" slack="5.0516666666666667"/>
+  <constraint index="37" slack="4.0516666666666667"/>
+  <constraint index="38" slack="2.1588917977483515"/>
+  <constraint index="39" slack="5.0449999999999999"/>
+  <constraint index="40" slack="4.0083333333333329"/>
+  <constraint index="41" slack="5.0149999999999997"/>
+  <constraint index="42" slack="4.0150000000000006"/>
+  <constraint index="43" slack="5.0533333333333337"/>
+  <constraint index="44" slack="5.0533333333333337"/>
+  <constraint index="45" slack="5.0533333333333337"/>
+  <constraint index="46" slack="3.0083333333333329"/>
+  <constraint index="47" slack="5.0083333333333337"/>
+  <constraint index="48" slack="4.0083333333333329"/>
+  <constraint index="49" slack="5.0083333333333329"/>
+  <constraint index="50" slack="5.0083333333333329"/>
+  <constraint index="51" slack="5.0083333333333337"/>
+  <constraint index="52" slack="5.0083333333333337"/>
+  <constraint index="53" slack="5.0083333333333337"/>
+  <constraint index="54" slack="5.0083333333333337"/>
+  <constraint index="55" slack="5.0083333333333337"/>
+  <constraint index="56" slack="5.0083333333333337"/>
+  <constraint index="57" slack="5.0083333333333337"/>
+  <constraint index="58" slack="4.0083333333333329"/>
+  <constraint index="59" slack="4.0083333333333337"/>
+  <constraint index="60" slack="5.0083333333333337"/>
+  <constraint index="61" slack="3.3480389376494557"/>
+  <constraint index="62" slack="4.0083333333333329"/>
+  <constraint index="63" slack="4.0083333333333329"/>
+  <constraint index="64" slack="4.0083333333333329"/>
+  <constraint index="65" slack="3.0083333333333329"/>
+  <constraint index="66" slack="5.0083333333333337"/>
+  <constraint index="67" slack="5.0083333333333337"/>
+  <constraint index="68" slack="5.0083333333333337"/>
+  <constraint index="69" slack="4.0083333333333337"/>
+  <constraint index="70" slack="5.0083333333333337"/>
+  <constraint index="71" slack="5.0083333333333329"/>
+  <constraint index="72" slack="5.0083333333333329"/>
+  <constraint index="73" slack="4.0083333333333329"/>
+  <constraint index="74" slack="4.0083333333333329"/>
+  <constraint index="75" slack="3.0416666666666679"/>
+  <constraint index="76" slack="0.39935324795741689"/>
  </linearConstraints>
  <variables>
   <variable name="x(0)" index="0" value="1"/>
@@ -109,7 +156,7 @@
   <variable name="x(51)" index="51" value="1"/>
   <variable name="x(52)" index="52" value="1"/>
   <variable name="x(53)" index="53" value="1"/>
-  <variable name="x(54)" index="54" value="1"/>
+  <variable name="x(54)" index="54" value="0"/>
   <variable name="x(55)" index="55" value="1"/>
   <variable name="x(56)" index="56" value="1"/>
   <variable name="x(57)" index="57" value="1"/>

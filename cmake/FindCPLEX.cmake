@@ -1,3 +1,5 @@
+# download from https://github.com/ampl/mp/tree/master/support/cmake
+# Attention : don't modify it.
 # Try to find the CPLEX, Concert, IloCplex and CP Optimizer libraries.
 #
 # Once done this will add the following imported targets:
@@ -10,11 +12,11 @@
 include(FindPackageHandleStandardArgs)
 
 # Find the path to CPLEX Studio.
-# CPLEX Studio 12.4 can be installed in the following default locations:
-#   /opt/ibm/ILOG/CPLEX_Studio<edition>124 - Linux
-#   /opt/IBM/ILOG/CPLEX_Studio<edition>124 - UNIX
-#   ~/Applications/IBM/ILOG/CPLEX_Studio<edition>124 - Mac OS X
-#   C:\Program Files\IBM\ILOG\CPLEX_Studio<edition>124 - Windows
+# CPLEX Studio 12.XX can be installed in the following default locations:
+#   /opt/ibm/ILOG/CPLEX_Studio<edition>12XX - Linux
+#   /opt/IBM/ILOG/CPLEX_Studio<edition>12XX - UNIX
+#   ~/Applications/IBM/ILOG/CPLEX_Studio<edition>12XX - Mac OS X
+#   C:\Program Files\IBM\ILOG\CPLEX_Studio<edition>12XX - Windows
 if (UNIX)
     set(CPLEX_ILOG_DIRS /opt/ibm/ILOG /opt/IBM/ILOG)
     if (CMAKE_SIZEOF_VOID_P EQUAL 8)
@@ -60,7 +62,7 @@ if (NOT CPLEX_STUDIO_DIR)
         if (CPLEX_STUDIO_DIRS)
             list(GET CPLEX_STUDIO_DIRS 0 CPLEX_STUDIO_DIR_)
             message(STATUS "Found CPLEX Studio: ${CPLEX_STUDIO_DIR_}")
-            break ()
+            break()
         endif ()
     endforeach ()
     if (NOT CPLEX_STUDIO_DIR_)
@@ -85,7 +87,7 @@ macro(find_win_cplex_library var path_suffixes)
         file(GLOB CPLEX_LIBRARY_CANDIDATES "${CPLEX_DIR}/${s}/cplex*.lib")
         if (CPLEX_LIBRARY_CANDIDATES)
             list(GET CPLEX_LIBRARY_CANDIDATES 0 ${var})
-            break ()
+            break()
         endif ()
     endforeach ()
     if (NOT ${var})
